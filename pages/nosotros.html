@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automa-it</title>
+    <link rel="shortcut icon" href="../assets/images/automa_logo_icon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <header class="header">
+        <section class="navcontainer">
+            <div>
+                <a href="../index.html"><img src="../assets/images/LOGO_HOJA_MEMBRETADA_SF.png" alt="Logo de la empresa" width="200px"/></a>
+            </div>
+            <nav>
+                <div>
+                    <ul class="navcontainer__desktop">
+                        <li class="navcontainer__desktop"><a href="./nosotros.html">Nosotros</a></li>
+                        <li class="navcontainer__desktop"><a href="./proyectos.html">Proyectos</a></li>
+                        <li class="navcontainer__desktop"><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="navcontainer__mobile">
+                    <nav class="navbar navbar-dark">
+                        <div class="text-bg-dark">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                                </li>
+                              </ul>
+                              <div class="navcontainer__mobile-img">
+                                <a href="../index.html"><img src="../assets/images/LOGO_HOJA_MEMBRETADA_SF.png" alt="Logo de la empresa" width="200px"/></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="aboutcontainer">
+          <h1 class="aboutcontainer__tittle">Nosotros</h1>
+          <section class="aboutcontainer__info">
+            <div class="aboutcontainer__info-pcont">
+              <p class="aboutcontainer__info-pcont-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolor odio distinctio non in at laborum dignissimos nulla asperiores? Reiciendis aspernatur labore ducimus fugiat totam culpa ullam praesentium id maiores.</p>
+              <p class="aboutcontainer__info-pcont-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolor odio distinctio non in at laborum dignissimos nulla asperiores? Reiciendis aspernatur labore ducimus fugiat totam culpa ullam praesentium id maiores.</p>
+              <p class="aboutcontainer__info-pcont-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolor odio distinctio non in at laborum dignissimos nulla asperiores? Reiciendis aspernatur labore ducimus fugiat totam culpa ullam praesentium id maiores.</p>
+              <p class="aboutcontainer__info-pcont-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolor odio distinctio non in at laborum dignissimos nulla asperiores? Reiciendis aspernatur labore ducimus fugiat totam culpa ullam praesentium id maiores.</p>
+            </div>
+            <div>
+              <img class="aboutcontainer__info-img" src="../assets/images/equipo_trabajo.jpg" alt="Nuestro equipo de trabajo">
+              <h3 class="aboutcontainer__info-desimg">Nuestro equipo de trabajo</h2>
+            </div>
+          </section>
+          
+          <section class="aboutlocal">
+            <div class="aboutlocal__info">
+              <h2 class="aboutlocal__local-tittle"><strong>¿Donde encontrarnos?</strong></h2>
+              <ul class="aboutlocal__local-list">
+                  <li class="aboutlocal__local-list-items"><strong>Provincia:</strong> de Buenos Aires</li>
+                  <li class="aboutlocal__local-list-items"><strong>Dirección:</strong> Dr. Francisco Berra 688, Castelar</li>
+                  <li class="aboutlocal__local-list-items"><strong>Teléfono:</strong> 011 4074-1234</li>
+                  <li class="aboutlocal__local-list-items"><strong>Codigo Postal:</strong> CP:1712</li>
+              </ul>
+            </div>
+            <div>
+              <iframe class="aboutlocal__local-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3932.183770065!2d-58.629275216522366!3d-34.63522818201255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9f1bc6703db%3A0x636fc5ba18010dfb!2sAUTOMA-IT!5e0!3m2!1ses!2sar!4v1681086541025!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </section>
+        </section>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
