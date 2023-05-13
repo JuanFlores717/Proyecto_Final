@@ -1,0 +1,39 @@
+
+.navcontainer__mobile{
+    font-size:20px;
+    margin: 5px;
+}
+
+.navcontainer__desktop{
+    display: none;
+    font-size:20px;
+    margin: 5px;
+}
+
+
+.header {
+    padding: 10px 20px;
+}
+
+.navcontainer{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navcontainer__mobile-img{
+    margin-top:35px;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    .navcontainer__desktop{
+        display: flex;
+    }
+    .navcontainer__mobile{
+        display: none;
+    }
+}

@@ -1,0 +1,71 @@
+/* Inicio */
+.inicontainer{
+    margin: 0 auto;
+    max-width: 1200px;
+
+    &__tittle{
+        width: 100%;
+        margin: 40px auto;
+        font-size:50px;
+        text-align: center;
+    }
+
+    &__logodata{
+        max-width:400px;
+        margin: 0 auto;
+        padding-left: 50px;
+
+        &-options {
+            width: 20px;
+            position: relative;
+            left: 150px;
+            bottom: 80px;
+            color: #44a2f8;    
+
+            &-links{   
+                width: 20px;
+                color: #44a2f8;
+                font-size:16px;
+                text-decoration: none;
+            }
+        }
+
+        &-logoimg{
+            width: 200px;
+        }
+    }
+
+    &__desc{
+        max-width: 1600px;
+        margin: 0 auto;
+        font-size:30px;
+        text-align: center;
+        padding: 25px;
+        min-width: 300px;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 992px) {
+
+    .inicontainer__logodata-options {
+        left: 300px;
+        bottom: 150px;
+
+        &-links{   
+            font-size:25px;
+        }
+    }
+
+    .inicontainer__desc{
+        font-size:50px;
+    }
+    .inicontainer__logodata{
+        padding-left: 0px;
+    
+        &-logoimg{
+            width: 400px;
+        }
+    }
+}
