@@ -243,18 +243,20 @@ ul aa:active {
   border: 3px solid black;
   padding: 10px 10px;
   box-shadow: -23px 22px 14px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
 }
 .prjcard__tittleinfo {
   display: flex;
-  padding-top: 5px;
-  margin: 0 auto;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-top: 5px;
 }
 .prjcard__tittleinfo-tittle {
   text-align: center;
   font-size: 30px;
+  font-weight: bold;
 }
 .prjcard__desc {
   text-align: justify;
@@ -291,11 +293,17 @@ ul aa:active {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
+  .prjcard {
+    height: 680px;
+  }
 }
 @media (min-width: 992px) {
   .prjcontainer {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+  }
+  .prjcard {
+    height: 680px;
   }
 }
 /* Nosotros */
@@ -314,8 +322,12 @@ ul aa:active {
 .aboutcontainer__info-pcont {
   padding-right: 20px;
 }
+.aboutcontainer__info-pcont-h2 {
+  font-size: 26px;
+}
 .aboutcontainer__info-pcont-p {
   font-size: 20px;
+  letter-spacing: 2px;
 }
 .aboutcontainer__info-img {
   max-width: 1600px;
