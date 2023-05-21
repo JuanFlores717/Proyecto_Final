@@ -2,12 +2,12 @@
 /* Conctacto */
 .formcontainer{
     padding: 0 20px;
-    margin: 0 auto;
-    max-width: 1600px;
+    margin: $marginCenterX;
+    max-width: $maxWidht;
 
     &__data{
         padding-top: 30px;
-        max-width: 1600px;
+        max-width: $maxWidht;
         justify-content: center;
         align-items: center;
         margin: 0 20px;
@@ -65,7 +65,7 @@
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 768px) {
+@media (min-width: $bpMedium) {
 
     .formcontainer__data-img{
         max-height: 350px;
@@ -79,7 +79,7 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $bpLarge) {
 
     .formcontainer__data{
         display: flex;
@@ -93,7 +93,7 @@
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $bpExtraLarge) {
     .formcontainer__data-img{
         max-height: 500px;
     }

@@ -1,8 +1,8 @@
 /* proyectos */
 
 .prjcontainer{
-    margin: 0 auto;
-    max-width: 1600px;
+    margin: $marginCenterX;
+    max-width: $maxWidht;
     margin-top: 60px;
     display: grid;
     grid-template-columns: 1fr;
@@ -12,7 +12,7 @@
 
 }
 .prjcard{
-    max-width: 1600px;
+    max-width: $maxWidht;
     border: 3px solid black;
     padding: 10px 10px;
     box-shadow: -23px 22px 14px 0px rgba(0, 0, 0, 0.2);
@@ -39,8 +39,8 @@
     }
 
     &__carousel {
-        max-width: 1600px;
-        margin: 0 auto;
+        max-width: $maxWidht;
+        margin: $marginCenterX;
     }
 
     &__carouseldesing h5{
@@ -58,13 +58,13 @@
 
 
 .header__prjmoreinfo{
-    max-width: 1600px;
-    margin: 0 auto;
+    max-width: $maxWidht;
+    margin: $marginCenterX;
     margin-top: 110px;
     text-align: center;
 
     & a{
-        color: #44a2f8;
+        color: $linkColorPrimary;
         text-decoration: none;
     }
 }
@@ -72,7 +72,7 @@
 
 
 /* MEDIA QUERIES */
-@media (min-width: 768px) {
+@media (min-width: $bpMedium) {
 
     .prjcontainer {
         grid-template-columns: repeat(2, 1fr);
@@ -85,7 +85,7 @@
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: $bpLarge) {
 
     .prjcontainer {
         grid-template-columns: repeat(3, 1fr);

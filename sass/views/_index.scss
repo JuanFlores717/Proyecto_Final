@@ -1,7 +1,7 @@
 /* Inicio */
 .inicontainer{
-    margin: 0 auto;
-    max-width: 1200px;
+    margin: $marginCenterX;
+    max-width: $maxWidht;
 
     &__tittle{
         width: 100%;
@@ -12,7 +12,7 @@
 
     &__logodata{
         max-width:400px;
-        margin: 0 auto;
+        margin: $marginCenterX;
         padding-left: 50px;
 
         &-options {
@@ -20,11 +20,11 @@
             position: relative;
             left: 150px;
             bottom: 80px;
-            color: #44a2f8;    
+            color: $linkColorPrimary;    
 
             &-links{   
                 width: 20px;
-                color: #44a2f8;
+                color: $linkColorPrimary;
                 font-size:16px;
                 text-decoration: none;
             }
@@ -36,8 +36,8 @@
     }
 
     &__desc{
-        max-width: 1600px;
-        margin: 0 auto;
+        max-width: $maxWidht;
+        margin: $marginCenterX;
         font-size:30px;
         text-align: center;
         padding: 25px;
@@ -47,7 +47,7 @@
 
 /* MEDIA QUERIES */
 
-@media (min-width: 992px) {
+@media (min-width: $bpLarge) {
 
     .inicontainer__logodata-options {
         left: 300px;

@@ -7,7 +7,7 @@
 
 header {
   font-family: "Lato", sans-serif;
-  background-color: rgb(33, 32, 32);
+  background-color: #212020;
   width: 100%;
 }
 
@@ -17,10 +17,6 @@ body {
 
 footer {
   font-family: "Lato", sans-serif;
-}
-
-.fondo {
-  background-color: rgb(253, 253, 239);
 }
 
 /* Barra navegación */
@@ -37,13 +33,13 @@ ul a:visited {
   color: #44a2f8;
 }
 ul a:hover {
-  color: #15528c;
+  color: #44a2f8;
   background-color: rgb(255, 255, 255);
   transition: background-color 0.5s;
   border-radius: 5px;
 }
 ul aa:active {
-  color: #15528c;
+  color: #44a2f8;
 }
 
 .navcontainer__mobile {
@@ -82,10 +78,123 @@ ul aa:active {
     display: none;
   }
 }
+.footer {
+  background-color: #212020;
+  color: white;
+  padding-top: 20px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.footer__container {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+@media (min-width: 768px) {
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.containerwebs {
+  margin: 0 auto;
+}
+.containerwebs__text {
+  font-size: 20px;
+}
+.conainersocial {
+  margin: 0 auto;
+}
+.conainersocial__text {
+  font-size: 20px;
+}
+.conainersocial__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.conainersocial__list .twitter {
+  color: white;
+  margin: 0 10px;
+  font-size: 35px;
+  transition: all 0.3s;
+}
+.conainersocial__list .twitter:hover {
+  color: #55acee;
+  border-radius: 25%;
+}
+.conainersocial__list .instagram {
+  color: white;
+  margin: 0 10px;
+  font-size: 35px;
+  transition: all 0.3s;
+}
+.conainersocial__list .instagram:hover {
+  color: #c92d8f;
+  border-radius: 25%;
+}
+.conainersocial__list .facebook {
+  color: white;
+  margin: 0 10px;
+  font-size: 35px;
+  transition: all 0.3s;
+}
+.conainersocial__list .facebook:hover {
+  color: #55acee;
+  border-radius: 25%;
+}
+.conainersocial__list .youtube {
+  color: white;
+  margin: 0 10px;
+  font-size: 35px;
+  transition: all 0.3s;
+}
+.conainersocial__list .youtube:hover {
+  color: #ff0000;
+  border-radius: 25%;
+}
+.conainersocial__list .linkedin {
+  color: white;
+  margin: 0 10px;
+  font-size: 35px;
+  transition: all 0.3s;
+}
+.conainersocial__list .linkedin:hover {
+  color: #319bed;
+  border-radius: 25%;
+}
+
+.containercopy {
+  text-align: center;
+}
+.containercopy__text {
+  font-size: 10px;
+}
+.containerwhat {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  position: fixed;
+  width: 60px;
+  bottom: 3%;
+  right: 3%;
+}
+.containerwhat__text {
+  font-size: 10px;
+  margin-top: 3px;
+}
 /* Inicio */
 .inicontainer {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1600px;
 }
 .inicontainer__tittle {
   width: 100%;

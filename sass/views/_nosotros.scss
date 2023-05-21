@@ -1,7 +1,7 @@
 /* Nosotros */
 .aboutcontainer{
-    max-width: 1600px;
-    margin: 0 auto;
+    max-width: $maxWidht;
+    margin: $marginCenterX;
     padding: 0 20px;
 
     &__info{
@@ -25,7 +25,7 @@
         }
 
         &-img{
-            max-width: 1600px;
+            max-width: $maxWidht;
             width: 300px;  
         }
 
@@ -46,8 +46,8 @@
 }
 
 .aboutlocal{
-    max-width: 1600px;
-    margin: 0 auto;
+    max-width: $maxWidht;
+    margin: $marginCenterX;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -57,7 +57,7 @@
         margin-right: 40px;
     
         &-map{
-            margin: 0 auto;
+            margin: $marginCenterX;
             width: 300px; 
             height: 300px; 
         }
@@ -74,7 +74,7 @@
 
 
 /* MEDIA QUERIES */
-@media (min-width: 768px) {
+@media (min-width: $bpMedium) {
 
     .aboutlocal__local-map{
         width: 600px; 
@@ -87,7 +87,7 @@
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: $bpLarge) {
 
     .aboutcontainer__info{
         flex-direction: row;

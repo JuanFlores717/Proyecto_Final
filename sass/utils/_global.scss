@@ -5,7 +5,7 @@
 }
 header{
     font-family: 'Lato', sans-serif;
-    background-color: rgb(33, 32, 32);
+    background-color: $navAndFoterColor;
     width: 100%;
 }
 
@@ -18,11 +18,6 @@ footer
     font-family: 'Lato', sans-serif;
 } 
 
-.fondo {
-    background-color:rgb(253, 253, 239);
-
-}
-
 /* Barra navegación */
 
 ul {
@@ -32,22 +27,44 @@ ul {
         text-decoration: none;
     
         &:link{
-            color: #44a2f8;
+            color: $linkColorPrimary;
         }
 
         &:visited{
-            color: #44a2f8;
+            color: $linkColorPrimary;
         }
 
         &:hover{
-            color: #15528c;
+            color: $linkColorPrimary;
             background-color: rgb(255, 255, 255);
             transition: background-color .5s;
-            border-radius: 5px;
+            border-radius: $borderRadius;
         }
 
         &a:active{
-            color:#15528c;
+            color: $linkColorPrimary;
         }
     } 
+}
+
+@mixin templateGrid($bp, $colDesktop) {
+    // vista mobile
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+    // vista desktop
+    @media (min-width: $bp) {
+        grid-template-columns: repeat($colDesktop, 1fr);
+    }
+}
+
+@mixin templateFlex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+
+    @if ($align == true) {
+        align-items: center;
+    }
 }

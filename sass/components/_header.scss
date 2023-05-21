@@ -16,8 +16,8 @@
 }
 
 .navcontainer{
-    max-width: 1600px;
-    margin: 0 auto;
+    max-width: $maxWidht;
+    margin: $marginCenterX;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,7 @@
 
 
 /* MEDIA QUERIES */
-@media (min-width: 768px) {
+@media (min-width: $bpMedium) {
     .navcontainer__desktop{
         display: flex;
     }
