@@ -3,9 +3,8 @@
     background-color: $navAndFoterColor;
     color:white;
     padding-top: 20px;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
+    margin-top: auto;
+
     
     &__container{
         max-width: $maxWidht;

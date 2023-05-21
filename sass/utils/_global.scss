@@ -11,6 +11,9 @@ header{
 
 body{
     font-family: 'Lato', sans-serif;
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+    min-height: 100vh;
 }
 
 footer
