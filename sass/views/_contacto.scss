@@ -4,13 +4,18 @@
     padding: 0 20px;
     margin: $marginCenterX;
     max-width: $maxWidht;
+    
+    &__tittle{
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
     &__data{
-        padding-top: 30px;
         max-width: $maxWidht;
         justify-content: center;
         align-items: center;
-        margin: 0 20px;
+        margin-bottom: 30px;
 
         &-datain{
             background-color: rgb(237, 237, 217);
@@ -57,11 +62,6 @@
         }
     }
 
-    &__tittle{
-        font-size: 40px;
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
 }
 
 /* MEDIA QUERIES */
@@ -83,7 +83,7 @@
 
     .formcontainer__data{
         display: flex;
-        padding-top: 100px;
+        padding-top: 10px;
 
         &-img{
             display: block;
