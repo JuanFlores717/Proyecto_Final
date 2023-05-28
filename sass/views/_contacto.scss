@@ -1,5 +1,12 @@
 
 /* Conctacto */
+.testing{
+    background-image: url("../assets/images/contact_fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .formcontainer{
     padding: 0 20px;
     margin: $marginCenterX;
@@ -9,6 +16,7 @@
         font-size: 40px;
         margin-top: 20px;
         margin-bottom: 20px;
+        color: white;
     }
 
     &__data{
@@ -18,10 +26,10 @@
         margin-bottom: 30px;
 
         &-datain{
-            background-color: rgb(237, 237, 217);
-            max-width: 520px;
+            color: white;
+            max-width: 600px;
             padding: 10px;
-            border: #15528c;
+            border: $linkColorPrimary;
             border-radius: 5px;
             border-style: solid;
             margin-right: 40px;
@@ -29,25 +37,29 @@
 
             &-formline{
                 padding:10px 10px;
-                border: rgba(0, 0, 0, 0.1);
+                border: rgb(68, 162, 248, 0.3);
                 border-radius: 5px;
                 border-style: solid;
 
+
                 &-coment{
-                    max-width: 200px;
                     padding: 0 10px;
+                    display: block;
+                    width: 100%;
                 }
 
                 &-label{
-                    width: 150px;
                     font-size: 18px;
+                    display: block;
+                    width: 100%;
                 }
 
                 &-input{
-                    max-width: 500px;
                     margin-bottom: 10px;
                     padding: 0 10px;
                     text-align: start;
+                    display: block;
+                    width: 100%;
                 }
             }
 
@@ -70,21 +82,17 @@
     .formcontainer__data-img{
         max-height: 350px;
     }
-    .formcontainer__data-datain-formline-input{
-        padding-left: 10px;
-        padding-right: 110px;
-    }
-    .formcontainer__data-datain-formline-coment{
-        max-width: 470px;
-    }
+
 }
 
 @media (min-width: $bpLarge) {
 
     .formcontainer__data{
         display: flex;
-        padding-top: 10px;
 
+        &-datain{
+            width: 600px;
+        }
         &-img{
             display: block;
             max-height: 450px;

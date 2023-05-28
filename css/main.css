@@ -266,6 +266,14 @@ ul aa:active {
   }
 }
 /* Conctacto */
+.testing {
+  background-image: url("../assets/images/contact_fondo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .formcontainer {
   padding: 0 20px;
   margin: 0 auto;
@@ -275,6 +283,7 @@ ul aa:active {
   font-size: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: white;
 }
 .formcontainer__data {
   max-width: 1600px;
@@ -283,10 +292,10 @@ ul aa:active {
   margin-bottom: 30px;
 }
 .formcontainer__data-datain {
-  background-color: rgb(237, 237, 217);
-  max-width: 520px;
+  color: white;
+  max-width: 600px;
   padding: 10px;
-  border: #15528c;
+  border: #44a2f8;
   border-radius: 5px;
   border-style: solid;
   margin-right: 40px;
@@ -294,23 +303,26 @@ ul aa:active {
 }
 .formcontainer__data-datain-formline {
   padding: 10px 10px;
-  border: rgba(0, 0, 0, 0.1);
+  border: rgba(68, 162, 248, 0.3);
   border-radius: 5px;
   border-style: solid;
 }
 .formcontainer__data-datain-formline-coment {
-  max-width: 200px;
   padding: 0 10px;
+  display: block;
+  width: 100%;
 }
 .formcontainer__data-datain-formline-label {
-  width: 150px;
   font-size: 18px;
+  display: block;
+  width: 100%;
 }
 .formcontainer__data-datain-formline-input {
-  max-width: 500px;
   margin-bottom: 10px;
   padding: 0 10px;
   text-align: start;
+  display: block;
+  width: 100%;
 }
 .formcontainer__data-datain-submit {
   margin-top: 10px;
@@ -325,18 +337,13 @@ ul aa:active {
   .formcontainer__data-img {
     max-height: 350px;
   }
-  .formcontainer__data-datain-formline-input {
-    padding-left: 10px;
-    padding-right: 110px;
-  }
-  .formcontainer__data-datain-formline-coment {
-    max-width: 470px;
-  }
 }
 @media (min-width: 992px) {
   .formcontainer__data {
     display: flex;
-    padding-top: 10px;
+  }
+  .formcontainer__data-datain {
+    width: 600px;
   }
   .formcontainer__data-img {
     display: block;
@@ -349,10 +356,19 @@ ul aa:active {
   }
 }
 /* proyectos */
+.prjtittle {
+  margin: 0 auto;
+  max-width: 1600px;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
 .prjcontainer {
   margin: 0 auto;
   max-width: 1600px;
-  margin-top: 60px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 50px;
@@ -370,6 +386,7 @@ ul aa:active {
   justify-content: space-between;
   border-radius: 8px;
   transition: all 0.3s;
+  height: 100%;
 }
 .prjcard:hover {
   translate: 10px;
@@ -396,6 +413,7 @@ ul aa:active {
   display: flex;
   flex-direction: row;
   justify-content: auto;
+  margin: 5px 0;
 }
 .prjcard__row-type {
   font-size: 16px;
@@ -424,7 +442,7 @@ ul aa:active {
 .header__prjmoreinfo {
   max-width: 1600px;
   margin: 0 auto;
-  margin-top: 110px;
+  margin: 60px 0;
   text-align: center;
 }
 .header__prjmoreinfo a {
@@ -438,17 +456,11 @@ ul aa:active {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
-  .prjcard {
-    height: 1000px;
-  }
 }
 @media (min-width: 992px) {
   .prjcontainer {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-  }
-  .prjcard {
-    height: 1000px;
   }
 }
 /* Nosotros */
@@ -485,7 +497,7 @@ ul aa:active {
 }
 .aboutcontainer__tittle {
   font-size: 40px;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
