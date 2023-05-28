@@ -1,12 +1,6 @@
 
 /* Conctacto */
-.testing{
-    background-image: url("../assets/images/contact_fondo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
+
 .formcontainer{
     padding: 0 20px;
     margin: $marginCenterX;
@@ -40,6 +34,7 @@
                 border: rgb(68, 162, 248, 0.3);
                 border-radius: 5px;
                 border-style: solid;
+                margin: 5px 0;
 
 
                 &-coment{

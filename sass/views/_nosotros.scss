@@ -3,6 +3,7 @@
     max-width: $maxWidht;
     margin: $marginCenterX;
     padding: 0 20px;
+    color: $textColorPrimary;
 
     &__info{
         @include templateFlex(column, space-between, false);

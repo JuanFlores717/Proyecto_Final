@@ -16,6 +16,13 @@ body{
     min-height: 100vh;
 }
 
+main{
+    background-image: url("../assets/images/contact_fondo1.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 footer
 {
     font-family: 'Lato', sans-serif;
@@ -51,6 +58,13 @@ ul {
             color: $linkColorPrimary;
         }
     } 
+}
+//extend
+
+.defaultborder{
+    border-color: $borderColorPrimary;
+    border-radius: $borderRadius;
+    border-style: solid;
 }
 
 @mixin templateGrid($bp, $colDesktop) {

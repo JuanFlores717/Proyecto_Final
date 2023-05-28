@@ -6,6 +6,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 20px;
+    color: $textColorPrimary;
 }
 
 .prjcontainer{
@@ -21,15 +22,17 @@
 }
 .prjcard{
     max-width: $maxWidht;
-    border: 3px solid black;
+    @extend .defaultborder;
     padding: 10px 10px;
     box-shadow: -23px 22px 14px 0px rgba(0, 0, 0, 0.2);
     @include templateFlex(column, space-between, false);
-    border-radius: 8px;
     transition: $transition;
     height: 100%;
+    color: $textColorPrimary;
+    background-color: rgb(0, 0, 0,0.4);
     &:hover{
         translate: 10px;
+        background-color: rgb(0, 0, 0,0.9);
     }
 
     &__tittleinfo{
@@ -63,7 +66,7 @@
         }
 
         &-p{
-            margin: 0;
+            margin-bottom: 5px;
             padding-left: 10px;
 
         }
@@ -89,8 +92,7 @@
 
 .header__prjmoreinfo{
     max-width: $maxWidht;
-    margin: $marginCenterX;
-    margin: 60px 0;
+    margin: 60px auto;
     text-align: center;
 
     & a{
