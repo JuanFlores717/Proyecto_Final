@@ -16,9 +16,7 @@
     border: 3px solid black;
     padding: 10px 10px;
     box-shadow: -23px 22px 14px 0px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include templateFlex(column, space-between, false);
     border-radius: 8px;
     transition: $transition;
     &:hover{
@@ -26,8 +24,7 @@
     }
 
     &__tittleinfo{
-        display:flex;
-        justify-content: space-between;
+        @include templateFlex(row, space-between, false);
         padding-top: 5px;
     
         &-tittle{

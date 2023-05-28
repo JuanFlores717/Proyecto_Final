@@ -18,8 +18,7 @@
 .navcontainer{
     max-width: $maxWidht;
     margin: $marginCenterX;
-    display: flex;
-    justify-content: space-between;
+    @include templateFlex(row, space-between, false);
     align-items: center;
 }
 

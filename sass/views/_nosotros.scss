@@ -5,9 +5,7 @@
     padding: 0 20px;
 
     &__info{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include templateFlex(column, space-between, false);
         align-items: center;
         margin-bottom: 60px;
         
@@ -48,9 +46,7 @@
 .aboutlocal{
     max-width: $maxWidht;
     margin: $marginCenterX;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
+    @include templateFlex(column, center, false);
     align-items: center;
 
     &__info{
