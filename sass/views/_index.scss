@@ -17,11 +17,11 @@
         padding-left: 50px;
 
         &-options {
-            width: 20px;
+            width: 28%;
             position: relative;
             left: 150px;
             bottom: 80px;
-            color: $linkColorPrimary;    
+            color: $linkColorPrimary;
 
             &-links{   
                 width: 20px;
@@ -29,6 +29,16 @@
                 font-size:16px;
                 text-decoration: none;
             }
+        }
+
+        &-blur{
+            width: 80px;
+            height: 72px;
+            background-color: rgb(255, 255, 255, 0.5);
+            position: relative;
+            left: 146px;
+            bottom: 153px;
+            filter: blur(1.5rem);
         }
 
         &-logoimg{
@@ -57,6 +67,13 @@
         &-links{   
             font-size:25px;
         }
+    }
+
+    .inicontainer__logodata-blur{
+        width: 120px;
+        height: 100px;
+        left: 295px;
+        bottom: 256px;
     }
 
     .inicontainer__desc{

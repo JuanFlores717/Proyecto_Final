@@ -24,15 +24,15 @@
     max-width: $maxWidht;
     @extend .defaultborder;
     padding: 10px 10px;
-    box-shadow: -23px 22px 14px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: $boxShadow;
     @include templateFlex(column, space-between, false);
     transition: $transition;
     height: 100%;
     color: $textColorPrimary;
-    background-color: rgb(0, 0, 0,0.4);
+    background-color: $bgColorPrimary;
     &:hover{
         translate: 10px;
-        background-color: rgb(0, 0, 0,0.9);
+        background-color: $bgColorSecondary;
     }
 
     &__tittleinfo{
@@ -79,13 +79,13 @@
     &__carouseldesing h5{
         color: black;
         background-color: rgb(255, 255, 255,0.5);
-        border-radius: 5px;
+        border-radius: $borderRadius;
     }
 
     &__carouseldesing p{
         color: black;
         background-color: rgb(255, 255, 255,0.5);
-        border-radius: 5px;
+        border-radius: $borderRadius;
     }
 }
 
@@ -94,6 +94,7 @@
     max-width: $maxWidht;
     margin: 60px auto;
     text-align: center;
+    color: $textColorPrimary;
 
     & a{
         color: $linkColorPrimary;

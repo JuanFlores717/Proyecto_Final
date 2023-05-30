@@ -10,7 +10,7 @@
         font-size: 40px;
         margin-top: 20px;
         margin-bottom: 20px;
-        color: white;
+        color: $textColorPrimary;
     }
 
     &__data{
@@ -20,19 +20,26 @@
         margin-bottom: 30px;
 
         &-datain{
-            color: white;
+            color: $textColorPrimary;
             max-width: 600px;
             padding: 10px;
             border: $linkColorPrimary;
-            border-radius: 5px;
+            border-radius: $borderRadius;
             border-style: solid;
             margin-right: 40px;
-            box-shadow: -23px 22px 14px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: $boxShadow;
+            background-color: $bgColorPrimary;
+            transition: $bgColorPrimary;
+            transition: $transition;
+
+            &:hover{
+                background-color: $bgColorSecondary;
+            }
 
             &-formline{
                 padding:10px 10px;
                 border: rgb(68, 162, 248, 0.3);
-                border-radius: 5px;
+                border-radius: $borderRadius;
                 border-style: solid;
                 margin: 5px 0;
 
