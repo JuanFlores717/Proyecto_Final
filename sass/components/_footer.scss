@@ -1,7 +1,7 @@
 
 .footer {
     background-color: $navAndFoterColor;
-    color:white;
+    color: $textColorPrimary;
     padding-top: 20px;
 
     
@@ -44,7 +44,7 @@
 
         @each $socialName, $socialColors in $socialIcons {
             .#{$socialName} {
-                color: white;
+                color: $textColorPrimary;
                 margin: 0 10px;
                 font-size: 35px;
                 transition: $transition;
@@ -77,10 +77,10 @@
     width: 60px;
     bottom: 3%;
     right: 3%;
-    background-color: rgb(0, 0, 0,0.5);
+    background-color: $bgColorPrimary;
 
     &:hover{
-        background-color: rgb(0, 0, 0,0.8);
+        background-color: $bgColorSecondary;
         transition: $transition;
     }
     &__text{
