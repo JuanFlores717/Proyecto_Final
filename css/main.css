@@ -57,7 +57,7 @@ ul aa:active {
   color: #44a2f8;
 }
 
-.defaultborder, .prjcard {
+.defaultborder, .prjcard, .inicontainer__mobile-card {
   border-color: #44a2f8;
   border-radius: 5px;
   border-style: solid;
@@ -208,10 +208,10 @@ ul aa:active {
   width: 60px;
   bottom: 3%;
   right: 3%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .containerwhat:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   transition: all 0.3s;
 }
 .containerwhat__text {
@@ -235,6 +235,7 @@ ul aa:active {
   max-width: 400px;
   margin: 0 auto;
   padding-left: 50px;
+  font-weight: bold;
 }
 .inicontainer__logodata-options {
   width: 28%;
@@ -242,21 +243,24 @@ ul aa:active {
   left: 150px;
   bottom: 80px;
   color: #44a2f8;
+  z-index: 1;
 }
 .inicontainer__logodata-options-links {
   width: 20px;
   color: #44a2f8;
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
+  transition: all 0.3s;
 }
 .inicontainer__logodata-blur {
-  width: 80px;
+  width: 100px;
   height: 72px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   position: relative;
   left: 146px;
   bottom: 153px;
   filter: blur(1.5rem);
+  animation: blur 1.5s infinite alternate;
 }
 .inicontainer__logodata-logoimg {
   width: 200px;
@@ -269,7 +273,35 @@ ul aa:active {
   padding: 25px;
   min-width: 300px;
 }
+.inicontainer__mobile {
+  margin: 0 auto;
+  max-width: 1600px;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 75px);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.inicontainer__mobile-card {
+  background-color: black;
+}
+.inicontainer__mobile-card h3 {
+  font-size: 16px;
+}
+.inicontainer__mobile-card-link {
+  font-size: 35px;
+  color: white;
+}
 
+@keyframes blur {
+  from {
+    filter: blur(1.5rem);
+  }
+  to {
+    filter: blur(3rem);
+  }
+}
 /* MEDIA QUERIES */
 @media (min-width: 992px) {
   .inicontainer__logodata-options {
@@ -278,6 +310,14 @@ ul aa:active {
   }
   .inicontainer__logodata-options-links {
     font-size: 25px;
+  }
+  .inicontainer__logodata-options-links:hover {
+    border-color: #44a2f8;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    padding: 0 10px;
   }
   .inicontainer__logodata-blur {
     width: 120px;
