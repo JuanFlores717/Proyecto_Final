@@ -9,6 +9,8 @@
         @include templateFlex(column, space-between, false);
         align-items: center;
         margin-bottom: 60px;
+        padding: 20px;
+        @extend .defaultcontainer;
         
         &-pcont{
             padding-right: 20px;
@@ -25,7 +27,7 @@
 
         &-img{
             max-width: $maxWidht;
-            width: 300px;  
+            width: 240px;  
         }
 
         &-desimg{
@@ -49,15 +51,12 @@
     margin: $marginCenterX;
     @include templateFlex(column, center, false);
     align-items: center;
+    @extend .defaultcontainer;
+    padding: 20px;
+    margin-bottom: 20px;
 
     &__info{
         margin-right: 40px;
-    
-        &-map{
-            margin: $marginCenterX;
-            width: 300px; 
-            height: 300px; 
-        }
 
         &-list{
             font-size: 18px;
@@ -67,13 +66,18 @@
             }
         }
     }
+    &__map{
+        margin: $marginCenterX;
+        width: 240px; 
+        height: 240px; 
+    }
 }
 
 
 /* MEDIA QUERIES */
 @media (min-width: $bpMedium) {
 
-    .aboutlocal__local-map{
+    .aboutlocal__map{
         width: 600px; 
         height: 300px; 
     }
@@ -97,7 +101,7 @@
     .aboutlocal{
         flex-direction: row;
 
-        &__local-map{
+        &__map{
             width: 800px; 
             height: 400px; 
         }

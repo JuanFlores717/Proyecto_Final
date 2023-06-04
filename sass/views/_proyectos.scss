@@ -18,6 +18,7 @@
     gap: 50px;
     padding: 0 20px;
     align-items: center;
+    
 
 }
 .prjcard{
@@ -31,7 +32,6 @@
     color: $textColorPrimary;
     background-color: $bgColorPrimary;
     &:hover{
-        translate: 10px;
         background-color: $bgColorSecondary;
     }
 
@@ -95,7 +95,8 @@
     margin: 60px auto;
     text-align: center;
     color: $textColorPrimary;
-
+    @extend.textborder;
+    
     & a{
         color: $linkColorPrimary;
         text-decoration: none;
@@ -111,7 +112,11 @@
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
-
+    .prjcard{
+        &:hover{
+            translate: 10px;
+        }
+    }
 }
 
 @media (min-width: $bpLarge) {
